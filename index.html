@@ -19,7 +19,7 @@
         }
       }
       async function autoDetectTeam(username, disallowedSplinters = []) {
-        var history = await getSMJson("/players/history?username=" + username);
+        var history = await getSMJson("/players/history?username=" + username + "&types=sm_battle");
         var lostBattles = [];
         var bestCards = [];
         var bestSplinters = {};
